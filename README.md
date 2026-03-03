@@ -4,7 +4,7 @@ MyBank Secure Online Banking System is a comprehensive security enhancement proj
 
 The system is built in compliance with GDPR (General Data Protection Regulation) and PCI-DSS (Payment Card Industry Data Security Standard) to ensure the highest level of security for sensitive financial data.
 
-System Architecture
+## System Architecture
 The application follows a three-tier architecture:
 
 1. Frontend (Web Interface): Built with Next.js, providing an interactive interface for users and built-in middleware to protect against common web attacks.
