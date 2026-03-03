@@ -103,6 +103,12 @@ The system has been rigorously tested to validate its five core security compone
 * Secure Communication: Used Wireshark to capture traffic to/from the server (IP 173.249.49.134), confirming all data payloads were encrypted via SSL/TLS and not readable in plain text.
 
 
+| Role | Key Operations |
+|------|----------------|
+| Bank Customer | Register, Login (MFA), Transfer Funds, View Encrypted Transaction History, Check Balance, Update Profile. |
+| Bank Employee | Login (MFA), View Pending Customer Registrations, Approve/Reject New Customers, View All Customer Transactions. |
+| System Admin | Login (MFA), View List of Employees, Create New Employee Accounts, Delete Employee Accounts. |
+
 
 ## Assumptions & Compliance
 
@@ -116,29 +122,25 @@ The system has been rigorously tested to validate its five core security compone
 ## Installation & Setup
 
 1. Clone the repository:
+   *git clone https://github.com/dwinsontohang/MyBank-Secure-Online-Banking-System.git
+   cd MyBank-Secure-Online-Banking-System*
 
-*git clone https://github.com/dwinsontohang/MyBank-Secure-Online-Banking-System.git
-cd MyBank-Secure-Online-Banking-System*
-
-2. Backend Setup (FastAPI):
+3. Backend Setup (FastAPI):
    * Navigate to the backend folder.
    * Create a virtual environment: python -m venv venv
    * Activate it and install dependencies: pip install -r requirements.txt
    * Set up environment variables (see .env.example) for database connection, AES keys, and RSA keys.
    * Run the server: uvicorn main:app --reload
 
-3. Frontend Setup (Next.js):
+4. Frontend Setup (Next.js):
    * Navigate to the frontend folder.
    * Install dependencies: npm install
    * Set up environment variables for the backend API URL.
    * Run the development server: npm run dev
 
-4. Database Setup:
+5. Database Setup:
    * Install PostgreSQL and create a database for the project.
    * Run the provided SQL scripts (if any) to create the users and transactions tables as defined in the coursework.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Author
 Dwinson Sitohang - Cybersecurity Professional
