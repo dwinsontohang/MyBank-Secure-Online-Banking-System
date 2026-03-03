@@ -103,6 +103,43 @@ The system has been rigorously tested to validate its five core security compone
 * Secure Communication: Used Wireshark to capture traffic to/from the server (IP 173.249.49.134), confirming all data payloads were encrypted via SSL/TLS and not readable in plain text.
 
 
+## Screenshots
+
+### Authentication & Multi-Factor Authentication (MFA)
+*Bank Customer Login Page with MFA (Username, Password, OTP)*  
+<img width="433" height="464" alt="image" src="https://github.com/user-attachments/assets/d060837a-d3d0-4557-ba79-206c7b46f6c4" />
+
+*Encrypted JWT Token stored in HTTP-only cookie after login*  
+<img width="993" height="532" alt="image" src="https://github.com/user-attachments/assets/bbf96b29-801c-4ae1-97f5-1ce42fe1f3d1" />
+
+
+### Data Encryption at Rest
+*Transaction table showing encrypted amount and digital signature*  
+<img width="975" height="49" alt="image" src="https://github.com/user-attachments/assets/b59f2217-ce17-4b0b-90e8-1f65c5948096" />
+
+*Integrity check failure after tampering with encrypted data*  
+<img width="975" height="127" alt="image" src="https://github.com/user-attachments/assets/1997eee9-9696-4ae0-ac7b-58d936dd9f14" />
+<img width="724" height="218" alt="image" src="https://github.com/user-attachments/assets/c72a3087-3dd5-4d51-ac0e-f6323e3f78ff" />
+
+
+### Secure Communication (SSL/TLS)
+*Wireshark capture showing encrypted traffic to MyBank server*  
+<img width="993" height="533" alt="image" src="https://github.com/user-attachments/assets/8403e1c3-04fe-4dad-8b2c-23fc406f385b" />
+
+*SSL/TLS certificate details as seen in the browser*  
+<img width="771" height="562" alt="image" src="https://github.com/user-attachments/assets/1732b915-18db-406a-a94d-2bffe15b808d" />
+
+
+### Role-Based Access Control (RBAC)
+*Bank Employee dashboard – approving customer registrations and monitoring transactions history*  
+<img width="994" height="304" alt="image" src="https://github.com/user-attachments/assets/8b22d042-4de0-45d6-8044-f1bdda73ef3d" />
+<img width="994" height="471" alt="image" src="https://github.com/user-attachments/assets/f56e03c3-4d5f-49ce-a2cb-078756dfc7d2" />
+
+*System Administrator – managing employee accounts*  
+<img width="994" height="532" alt="image" src="https://github.com/user-attachments/assets/cc9132e7-2ce7-44d5-84a4-213e7bb2e495" />
+
+
+
 ## User Roles & Operations
 
 | Role | Key Operations |
