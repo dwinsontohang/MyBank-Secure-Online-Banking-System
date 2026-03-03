@@ -103,6 +103,8 @@ The system has been rigorously tested to validate its five core security compone
 * Secure Communication: Used Wireshark to capture traffic to/from the server (IP 173.249.49.134), confirming all data payloads were encrypted via SSL/TLS and not readable in plain text.
 
 
+## User Roles & Operations
+
 | Role | Key Operations |
 |------|----------------|
 | Bank Customer | Register, Login (MFA), Transfer Funds, View Encrypted Transaction History, Check Balance, Update Profile. |
